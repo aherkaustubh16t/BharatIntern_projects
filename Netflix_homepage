@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply styles to the entire body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Style the header with navigation and user profile */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        nav img {
+            width: 150px;
+        }
+
+        .user-profile img {
+            width: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Style the hero section */
+        .hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #e50914;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style the movie list section */
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 5%;
+        }
+
+        .movie {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .movie img {
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+    <title>Netflix Clone</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="netflix-logo.png" alt="Netflix Logo">
+        </nav>
+        <div class="user-profile">
+            <img src="user-avatar.png" alt="User Avatar">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Netflix</h1>
+                <p>Watch unlimited movies and TV shows.</p>
+                <button class="cta-button">Subscribe Now</button>
+            </div>
+        </section>
+
+        <section class="movie-list">
+            <!-- Movie posters and titles go here -->
+            <!-- Example movie -->
+            <div class="movie">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h2>Movie Title 1</h2>
+            </div>
+            <!-- Add more movies -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Netflix Clone</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
